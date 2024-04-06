@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MachineFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_yellow_bg"
+    tools:context=".ui.settings.machineSetting.MachineFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="硬體設置"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="0dp"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/choosePetText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="10dp"
+                    android:text="選取寵物"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/choosePetSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="15dp" />
+            </LinearLayout>
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="0dp"
+                android:layout_marginVertical="15dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/texView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一次餵食份量"
+                android:layout_marginLeft="15dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/amount"
+                />
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@color/white"
+                android:ems="5"
+                android:layout_marginLeft="15dp"
+                android:hint="0~9"
+                android:inputType="number"
+                android:padding="15dp" />
+            <TextView
+                android:id="@+id/texView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="寵物取食間隔"
+                android:layout_marginLeft="15dp"
+                android:textSize="20sp"
+                android:layout_marginVertical="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/amount"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                 >
+                <TextView
+                    android:id="@+id/texViewhour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小時"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/texViewminute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分鐘"
+                    android:layout_marginLeft="120dp"
+                    android:textSize="18sp"
+                    android:layout_toRightOf="@+id/texViewhour"
+                    />
+                <EditText
+                    android:id="@+id/hourinterval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="0dp"
+                    android:background="@color/white"
+                    android:ems="5"
+                    android:hint="0~23"
+                    android:inputType="number"
+                    android:padding="15dp"
+                    android:layout_below="@+id/texViewhour"/>
+
+                <EditText
+                    android:id="@+id/minuteinterval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="0dp"
+                    android:background="@color/white"
+                    android:ems="5"
+                    android:hint="0~59"
+                    android:layout_marginLeft="50dp"
+                    android:inputType="number"
+                    android:padding="15dp"
+                    android:layout_below="@+id/texViewminute"
+                    android:layout_toRightOf="@+id/hourinterval"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/texView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自動餵食間隔"
+                android:textSize="20sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginVertical="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/amount"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                >
+                <TextView
+                    android:id="@+id/texViewfeedhour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小時"
+                    android:textSize="18sp"
+                />
+                <TextView
+                    android:id="@+id/texViewfeedminute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分鐘"
+                    android:layout_marginLeft="120dp"
+                    android:textSize="18sp"
+                    android:layout_toRightOf="@+id/texViewfeedhour"
+                    />
+                <EditText
+                    android:id="@+id/feedhourinterval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="0dp"
+                    android:background="@color/white"
+                    android:ems="5"
+                    android:hint="0~23"
+                    android:inputType="number"
+                    android:padding="15dp"
+                    android:layout_below="@+id/texViewfeedhour"/>
+
+                <EditText
+                    android:id="@+id/feedminuteinterval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="0dp"
+                    android:background="@color/white"
+                    android:ems="5"
+                    android:hint="0~59"
+                    android:layout_marginLeft="50dp"
+                    android:inputType="number"
+                    android:padding="15dp"
+                    android:layout_below="@+id/texViewfeedminute"
+                    android:layout_toRightOf="@+id/feedhourinterval"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <Button
+                android:id="@+id/settingBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/dark_yellow_btn"
+                android:text="儲存"
+                />
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/dark_yellow_btn"
+                android:text="取消"
+            />
+        </LinearLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

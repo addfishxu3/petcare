@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">寵物照護系統</string>
+    <string name="title_activity_signup">註冊</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_main_page">MainPage</string>
+    <string name="title_home">首頁</string>
+    <string name="title_hospital">寵物醫院</string>
+    <string name="title_settings">設定</string>
+    <string name="title_activity_hospital_detail">寵物醫院詳細資料</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="account">帳號</string>
+    <string name="password">密碼</string>
+    <string name="email">電子郵件</string>
+    <string name="phone">手機號碼</string>
+    <string name="user_name">使用者名稱</string>
+    <string name="pet_name">寵物名稱</string>
+    <string name="pet_type">品種</string>
+    <string name="pet_gender">性別</string>
+    <string name="pet_age">年齡</string>
+
+</resources>
