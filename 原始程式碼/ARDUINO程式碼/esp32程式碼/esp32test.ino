@@ -10,10 +10,10 @@
   #include <NTPClient.h>
   #include <WiFiUdp.h>
 
-  #define WIFI_SSID "FishPhone2"
-  #define WIFI_PASSWORD "0920202373"
-  #define API_KEY "AIzaSyDHxGEFxdliWz4HT2DGfVSRQT2bjtA7d28"
-  #define DATABASE_URL "https://petcare-f455b-default-rtdb.firebaseio.com/"
+  #define WIFI_SSID ""//your wifi
+  #define WIFI_PASSWORD ""//pwd
+  #define API_KEY ""
+  #define DATABASE_URL ""
   #define TOUCH_PIN 32
   #define USER_EMAIL "123@gmail.com"
   #define USER_PASSWORD "111111"
