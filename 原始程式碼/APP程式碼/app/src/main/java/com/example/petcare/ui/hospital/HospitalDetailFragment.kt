@@ -151,7 +151,7 @@ class HospitalDetailFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarke
 
         val toHospital = "$destinationLat,$destinationLng"
         val path: MutableList<List<LatLng>> = ArrayList()
-        val urlDirections = "https://maps.googleapis.com/maps/api/directions/json?origin=${lastLocation.latitude},${lastLocation.longitude}&destination=$toHospital&key=AIzaSyDym_Ru3MYNpY_W-pgkNyiAAnCUESRN51g"
+        val urlDirections = "https://maps.googleapis.com/maps/api/directions/json?origin=${lastLocation.latitude},${lastLocation.longitude}&destination=$toHospital&key="
         val directionsRequest = object : StringRequest(Method.GET, urlDirections, Response.Listener {
                 response ->
             val jsonResponse = JSONObject(response)
