@@ -28,7 +28,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDym_Ru3MYNpY_W-pgkNyiAAnCUESRN51g" />
+            android:value="" />
 
         <activity
             android:name=".ForgotPassword"
