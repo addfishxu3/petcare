@@ -15,8 +15,8 @@
   #define API_KEY ""
   #define DATABASE_URL ""
   #define TOUCH_PIN 32
-  #define USER_EMAIL "123@gmail.com"
-  #define USER_PASSWORD "111111"
+  #define USER_EMAIL ""
+  #define USER_PASSWORD ""
   String USER_PET="680";
  
   FirebaseData fdbo, fdbo_s1,fdbo_s2,fdbo_s3;
