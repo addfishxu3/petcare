@@ -11,17 +11,17 @@
 #include "addons/RTDBHelper.h"
 
 //WiFi setting
-const char* ssid = "FishPhone2";
-const char* password = "0920202373";
+const char* ssid = "";
+const char* password = "";
 
 // Firebase project API Key
-#define API_KEY "AIzaSyDHxGEFxdliWz4HT2DGfVSRQT2bjtA7d28"
+#define API_KEY ""
 const char* DATABASE_URL="https://petcare-f455b-default-rtdb.firebaseio.com/";
 String USER_PET="680";
 
 // Authorized Email and Corresponding Password
-#define USER_EMAIL "123@gmail.com"
-#define USER_PASSWORD "111111"
+#define USER_EMAIL ""
+#define USER_PASSWORD ""
 
 //Firebase storage bucket ID 
 #define STORAGE_BUCKET_ID "petcare-f455b.appspot.com"
